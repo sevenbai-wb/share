@@ -10,8 +10,12 @@
 </head>
 <body>
     Hello Fullscreen!
+    <button id="goFS">Go fullscreen</button>
     <script>
-        document.body.requestFullscreen();
+        var goFS = document.getElementById("goFS");
+        goFS.addEventListener("click", function() {
+            document.body.requestFullscreen();
+        }, false);
     </script>
 </body>
 </html>
